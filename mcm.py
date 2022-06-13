@@ -23,8 +23,10 @@ def factoresRecursivo( numero ):
 def factoresIterativo( numero ):
     while numero >= 2:
         if (numero % 2 == 0):
+            print(2)
             numero = numero//2
         elif (numero % 3 == 0):
+            print(3)
             numero = numero//3
         else:
             for x in range(5, numero + 1, 2):
