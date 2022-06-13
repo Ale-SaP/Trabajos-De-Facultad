@@ -1,4 +1,4 @@
-def mcd( numero ):
+def mcdRecursivo( numero ):
     if numero < 2:
         print(numero)
         return numero
@@ -6,17 +6,55 @@ def mcd( numero ):
     elif (numero >= 2): 
         if (numero % 2 == 0):
             print(2)
-            return mcd( numero//2 )
+            return mcdRecursivo( numero//2 )
 
         elif (numero % 3 == 0):
             print(3)
-            return mcd( numero//3 )
+            return mcdRecursivo( numero//3 )
 
         else:
             for x in range(5, numero + 1, 2):
                 if (numero % x == 0):
                     print(x)
-                    return mcd(numero // x)
+                    return mcdRecursivo(numero // x)
+
+
+
+def mcdIterativo( numero ):
+    while numero >= 2:
+        if (numero % 2 == 0):
+            numero = numero//2
+        elif (numero % 3 == 0):
+            numero = numero//3
+        else:
+            for x in range(5, numero + 1, 2):
+                if (numero % x == 0):
+                    print(x)
+                    numero = numero//x
+
+
+
+ListaDePrimos = []
+
+def mcdConMemoizacion( numero ):
+    if numero < 2:
+        print(numero)
+        return numero
+
+    elif (numero >= 2): 
+        if (numero % 2 == 0):
+            print(2)
+            return mcdConMemoizacion( numero//2 )
+
+        elif (numero % 3 == 0):
+            print(3)
+            return mcdConMemoizacion( numero//3 )
+
+        else:
+            for x in ListaDePrimos:
+                if (numero % x == 0):
+                    print(x)
+                    return mcdConMemoizacion(numero // x)
 
 
 divisores = []
