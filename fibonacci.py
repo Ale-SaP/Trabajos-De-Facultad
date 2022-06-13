@@ -1,20 +1,20 @@
-def fibonacciIterativo(cantidadDeVeces):
+def fibonacciiterativo(digitoSolicitado):
 
     numeroDeFibonacci = 1
     numeroPrevio = 0
     vecesHecho = 2
 
-    while (vecesHecho < cantidadDeVeces):
+    while (vecesHecho < digitoSolicitado):
 
         vecesHecho += 1
         numeroPrevio = numeroDeFibonacci - numeroPrevio 
         numeroDeFibonacci = numeroDeFibonacci + numeroPrevio
 
-        print("El número", numeroDeFibonacci, "es el dígito", vecesHecho, "de Fibonacci")
+    print("El número", numeroDeFibonacci, "es el dígito", vecesHecho, "de Fibonacci")
 
 
-def fibonacciRecursivo(cantidadDeVeces):
-    if cantidadDeVeces <= 2:
+def fibonaccirecursivo(digitoSolicitado):
+    if digitoSolicitado <= 2:
         return 1
     else: 
-        return( ( fibonacciRecursivo(cantidadDeVeces - 1) + fibonacciRecursivo(cantidadDeVeces - 2) ) )
+        return( ( fibonaccirecursivo(digitoSolicitado - 1) + fibonacciRecursivo(digitoSolicitado - 2) ) )
