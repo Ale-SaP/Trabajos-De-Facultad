@@ -13,7 +13,7 @@ def mcd( numero ):
             return mcd( numero//3 )
 
         else:
-            for x in range(4, numero + 1 ):
+            for x in range(5, numero + 1, 2):
                 if (numero % x == 0):
                     print(x)
                     return mcd(numero // x)
