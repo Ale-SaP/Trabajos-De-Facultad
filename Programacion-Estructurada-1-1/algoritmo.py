@@ -11,4 +11,5 @@ def ejercicio():
     promedio = acumulador/contador
     print(f"El promedio es: {promedio}")
 
+
 ejercicio()
