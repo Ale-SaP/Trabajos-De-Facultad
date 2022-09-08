@@ -1,5 +1,5 @@
 def factoresRecursivo( numero ):
-    if numero < 2:
+    if numero < 2: 
         print(numero)
         return numero
 
@@ -47,5 +47,5 @@ def factoresConMemoizacion( numero ):
         for x in ListaDePrimos:
            if (numero % x == 0):
               print(x)
-              return mcdConMemoizacion(numero // x)
+              return factoresConMemoizacion(numero // x)
              

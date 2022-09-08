@@ -14,6 +14,6 @@ function ejercicio()
 
     promedio = acumulador/contador
     print("El promedio es:", promedio)
- end
+end
 
  ejercicio()

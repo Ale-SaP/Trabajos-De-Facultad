@@ -1,7 +1,7 @@
 def ejercicio
     acumulador = 0
     contador = 0
-    puts("Ingresar Edad: ")
+    puts("Ingresar Edad:  ")
     edad = gets.to_f
 
     while edad != 0

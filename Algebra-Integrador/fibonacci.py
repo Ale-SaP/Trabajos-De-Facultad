@@ -1,5 +1,4 @@
 def fibonacciiterativo(digitoSolicitado):
-
     numeroDeFibonacci = 1
     numeroPrevio = 0
     vecesHecho = 2
@@ -17,4 +16,4 @@ def fibonaccirecursivo(digitoSolicitado):
     if digitoSolicitado <= 2:
         return 1
     else: 
-        return( ( fibonaccirecursivo(digitoSolicitado - 1) + fibonacciRecursivo(digitoSolicitado - 2) ) )
+        return( ( fibonaccirecursivo(digitoSolicitado - 1) + fibonaccirecursivo(digitoSolicitado - 2) ) )

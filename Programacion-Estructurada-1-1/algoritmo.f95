@@ -17,6 +17,6 @@ Program ejercicio
 
     promedio = acumulador / contador
     print *, 'El promedio es:'
-    print *, promedio
+    print *, promedio 
 
 End Program ejercicio
