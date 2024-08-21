@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">  <!-- Correct charset declaration -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kairon Instrumentos</title>
+    <!-- Tailwind CSS -->
+    <script src="Kairon%20Instrumentos_files/3.4.5"></script>
+    
+    <link href="Kairon%20Instrumentos_files/css2.css" rel="stylesheet">
+    <link href="Kairon%20Instrumentos_files/fonts.css" rel="stylesheet">
+    <link href="Kairon%20Instrumentos_files/buttons.css" rel="stylesheet">
+    <!-- HTMX -->
+    <script src="Kairon%20Instrumentos_files/htmx.min.js"></script>
+<style>/* ! tailwindcss v3.4.5 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.absolute{position:absolute}.relative{position:relative}.right-0{right:0px}.m-3{margin:0.75rem}.mx-auto{margin-left:auto;margin-right:auto}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-0{margin-top:0px}.mt-auto{margin-top:auto}.block{display:block}.flex{display:flex}.size-12{width:3rem;height:3rem}.h-10{height:2.5rem}.h-6{height:1.5rem}.h-auto{height:auto}.h-24{height:6rem}.h-full{height:100%}.h-20{height:5rem}.max-h-16{max-height:4rem}.w-10{width:2.5rem}.w-32{width:8rem}.w-4{width:1rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-full{width:100%}.w-1\/3{width:33.333333%}.w-1\/4{width:25%}.w-2\/3{width:66.666667%}.w-24{width:6rem}.w-3\/4{width:75%}.w-20{width:5rem}.max-w-screen-md{max-width:768px}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-solid{border-style:solid}.border-dashed{border-style:dashed}.border-black{--tw-border-opacity:1;border-color:rgb(0 0 0 / var(--tw-border-opacity))}.border-gray-600{--tw-border-opacity:1;border-color:rgb(75 85 99 / var(--tw-border-opacity))}.bg-\[\#7BAA65\]{--tw-bg-opacity:1;background-color:rgb(123 170 101 / var(--tw-bg-opacity))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}.bg-\[\#ED8000\]{--tw-bg-opacity:1;background-color:rgb(237 128 0 / var(--tw-bg-opacity))}.p-4{padding:1rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.px-4{padding-left:1rem;padding-right:1rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.pl-3{padding-left:0.75rem}.pr-10{padding-right:2.5rem}.pt-4{padding-top:1rem}.pb-4{padding-bottom:1rem}.pl-4{padding-left:1rem}.pb-2{padding-bottom:0.5rem}.text-center{text-align:center}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.outline-none{outline:2px solid transparent;outline-offset:2px}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity))}@media (min-width: 640px){.sm\:w-16{width:4rem}.sm\:w-1\/5{width:20%}.sm\:w-4\/5{width:80%}.sm\:px-4{padding-left:1rem;padding-right:1rem}.sm\:px-8{padding-left:2rem;padding-right:2rem}}</style><style>                      .htmx-indicator{opacity:0}                      .htmx-request .htmx-indicator{opacity:1; transition: opacity 200ms ease-in;}                      .htmx-request.htmx-indicator{opacity:1; transition: opacity 200ms ease-in;}                    </style></head>
+<body class="bg-gray-100 max-w-screen-md">
+    <header class="container mx-auto">
+        <nav>
+            <ul class="flex flex-wrap items-center justify-between px-6 pt-4 sm:px-8">
+                <li>
+                    <img src="Kairon%20Instrumentos_files/logo-402286790-1682352763-cb07c50b52b5915204ce03a6947093d41.webp" alt="Store logo" class="w-32 h-auto">
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="block p-4 text-white rounded hover:bg-blue-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" class="w-8 sm:w-16 h-auto">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"></path>
+                            </svg>                              
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="flex flex-wrap items-center justify-between px-2 sm:px-4 mt-4 bg-[#7BAA65] text-white border-b border-solid border-black py-1 text-xs">
+                <p>Abierto hasta las 23:30</p>
+                <div class="flex flex-wrap items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"></path>
+                    </svg>
+                    <p class="underline">+3764 123123</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center justify-between px-2 sm:px-4 border-top-solid mt-2">
+                <h1 class="font-title-xl">Tienda</h1>
+                <div class="flex items-center justify-end">
+                    <div class="relative flex items-center">
+                        <!-- Search Input -->
+                        <input type="text" placeholder="Buscar productos..." class="w-full h-10 pl-3 pr-10 text-sm text-gray-400 border border-black rounded-full outline-none">
+            
+                        <!-- Search Bar-->
+                        <button class="absolute right-0 flex items-center justify-center w-10 h-10 bg-black rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 15l5 5m-5-5a7 7 0 1 0-10 0 7 7 0 0 0 10 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>            
+        </nav>                
+    </header>
+
+    <main class="container mx-auto mt-4">
+        <section id="categories">
+            <div id="categories-content" hx-get="/usermenu/categories" hx-trigger="load" hx-target="#categories-content" hx-swap="innerHTML" class=""><ul class="flex px-4 overflow-x-auto pb-2 border-b border-solid border-black">
+    
+    <li class="text-center">
+        <a href="#" hx-get="usermenu/content/guitarras" hx-target="#content-section" hx-swap="innerHTML">
+            <div class="m-3 flex h-20 w-20 items-center justify-center rounded-full border-dashed border-2 border-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12"> <path stroke-linecap="round" stroke-linejoin="round" d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"></path></svg>
+            </div>
+            <p class="font-md-text">Guitarras</p>
+        </a>
+    </li>
+    
+    <li class="text-center">
+        <a href="#" hx-get="usermenu/content/bajos" hx-target="#content-section" hx-swap="innerHTML">
+            <div class="m-3 flex h-20 w-20 items-center justify-center rounded-full border-dashed border-2 border-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12"> <path stroke-linecap="round" stroke-linejoin="round" d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"></path></svg>
+            </div>
+            <p class="font-md-text">Bajos</p>
+        </a>
+    </li>
+    
+    <li class="text-center">
+        <a href="#" hx-get="usermenu/content/baterias" hx-target="#content-section" hx-swap="innerHTML">
+            <div class="m-3 flex h-20 w-20 items-center justify-center rounded-full border-dashed border-2 border-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12"> <path stroke-linecap="round" stroke-linejoin="round" d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"></path></svg>
+            </div>
+            <p class="font-md-text">Baterias</p>
+        </a>
+    </li>
+    
+</ul></div>
+        </section>
+
+        <section id="content" class="mt-4">
+            <div id="content-section" hx-get="/usermenu/content/guitarras" hx-trigger="load" hx-target="#content-section" hx-swap="innerHTML" class=""><ul class="mt-0 px-2 space-y-4">
+    
+    <li class="flex border-b border-dashed pb-4">
+        
+        <!-- Left: image -->
+        <div class="flex w-1/4 justify-center items-center">
+            <img src="Kairon%20Instrumentos_files/d_670191-mla40647458346_022020-o-0477e0d26bb5044229159924069.jpg" alt="Guitarra Electrica Slick Guitars Sl60m Wh Melody Maker" class="h-24 w-24 rounded-lg ">
+        </div>
+        
+        <!-- Right: content (3/4) -->
+        <div class="flex flex-col w-3/4 pl-4">
+            
+            <!-- Top Row: title and price -->
+            <div class="flex justify-between items-start gap-2">
+                <h3 class="font-subtitle-lg w-2/3 sm:w-4/5">Guitarra Electrica Slick Guitars Sl60m Wh Melody Maker</h3>
+                <div class="flex justify-end items-end w-1/3 sm:w-1/5">
+                    <p class="font-subtitle-lg">$ 235.500</p>
+                </div>
+            </div>
+            
+            <!-- Middle Row: description -->
+            <div class="flex justify-between items-start gap-2">
+                <p class="font-text-md w-2/3 sm:w-4/5 overflow-y-auto h-full max-h-16">Color:
+ White Forma del cuerpo: SG - Style Número de cuerdas: 6 cuerdas 
+Construcción mástil: Atornillado Número de trastes: 22 Longitud escala: 
+24,75&amp;quot; (62,87 ...</p>
+            
+                <!-- Bottom Row: shopping cart button -->
+                <div class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5">
+                    <button class="px-4 py-2 rounded cta-button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" class="bg-[#ED8000]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5436 9.58333L17.7756 8.19984C17.9271 7.29523 18.003 6.84293 17.7602 6.54647C17.5174 6.25 17.0711 6.25 16.1786 6.25H3.82135C2.92882 6.25 2.48256 6.25 2.23975 6.54647C1.99695 6.84293 2.07277 7.29523 2.22442 8.19984L3.22739 14.1828C3.55982 16.1659 3.72604 17.1574 4.40469 17.7454C5.08334 18.3333 6.06161 18.3333 8.01816 18.3333H9.99998" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M11.6667 15H18.3334M15 18.3333V11.6667" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M14.5834 6.25002C14.5834 3.71871 12.5314 1.66669 10 1.66669C7.46871 1.66669 5.41669 3.71871 5.41669 6.25002" stroke="white" stroke-width="1.5"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        
+    </li>
+    
+    <li class="flex border-b border-dashed pb-4">
+        
+        <!-- Left: image -->
+        <div class="flex w-1/4 justify-center items-center">
+            <img src="Kairon%20Instrumentos_files/whatsapp-image-2021-10-19-at-5-16-39-pm-51-76867d4e867dbc2a.jpeg" alt="Guitarra Electrica Slick Guitars Sl57 TV Yellow Stratocaster" class="h-24 w-24 rounded-lg ">
+        </div>
+        
+        <!-- Right: content (3/4) -->
+        <div class="flex flex-col w-3/4 pl-4">
+            
+            <!-- Top Row: title and price -->
+            <div class="flex justify-between items-start gap-2">
+                <h3 class="font-subtitle-lg w-2/3 sm:w-4/5">Guitarra Electrica Slick Guitars Sl57 TV Yellow Stratocaster</h3>
+                <div class="flex justify-end items-end w-1/3 sm:w-1/5">
+                    <p class="font-subtitle-lg">$ 241.500</p>
+                </div>
+            </div>
+            
+            <!-- Middle Row: description -->
+            <div class="flex justify-between items-start gap-2">
+                <p class="font-text-md w-2/3 sm:w-4/5 overflow-y-auto h-full max-h-16">Color:
+ Tv Yellow Construcción: Cuerpo sólido Forma del cuerpo: Modelo Strat 
+Número de cuerdas: 6 cuerdas Construcción mástil: Atornillado Número de 
+trastes: ...</p>
+            
+                <!-- Bottom Row: shopping cart button -->
+                <div class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5">
+                    <button class="px-4 py-2 rounded cta-button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" class="bg-[#ED8000]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5436 9.58333L17.7756 8.19984C17.9271 7.29523 18.003 6.84293 17.7602 6.54647C17.5174 6.25 17.0711 6.25 16.1786 6.25H3.82135C2.92882 6.25 2.48256 6.25 2.23975 6.54647C1.99695 6.84293 2.07277 7.29523 2.22442 8.19984L3.22739 14.1828C3.55982 16.1659 3.72604 17.1574 4.40469 17.7454C5.08334 18.3333 6.06161 18.3333 8.01816 18.3333H9.99998" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M11.6667 15H18.3334M15 18.3333V11.6667" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M14.5834 6.25002C14.5834 3.71871 12.5314 1.66669 10 1.66669C7.46871 1.66669 5.41669 3.71871 5.41669 6.25002" stroke="white" stroke-width="1.5"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        
+    </li>
+    
+    <li class="flex border-b border-dashed pb-4">
+        
+        <!-- Left: image -->
+        <div class="flex w-1/4 justify-center items-center">
+            <img src="Kairon%20Instrumentos_files/images_003.jpg" alt="Guitarra Electrica Slick Guitars Sl60m Bwn Melody Maker" class="h-24 w-24 rounded-lg ">
+        </div>
+        
+        <!-- Right: content (3/4) -->
+        <div class="flex flex-col w-3/4 pl-4">
+            
+            <!-- Top Row: title and price -->
+            <div class="flex justify-between items-start gap-2">
+                <h3 class="font-subtitle-lg w-2/3 sm:w-4/5">Guitarra Electrica Slick Guitars Sl60m Bwn Melody Maker</h3>
+                <div class="flex justify-end items-end w-1/3 sm:w-1/5">
+                    <p class="font-subtitle-lg">$ 243.300</p>
+                </div>
+            </div>
+            
+            <!-- Middle Row: description -->
+            <div class="flex justify-between items-start gap-2">
+                <p class="font-text-md w-2/3 sm:w-4/5 overflow-y-auto h-full max-h-16">Color:
+ Brown Woodgrain Forma del cuerpo: SG - Style Número de cuerdas: 6 
+cuerdas Construcción mástil: Atornillado Número de trastes: 22 Longitud 
+escala: 24,7...</p>
+            
+                <!-- Bottom Row: shopping cart button -->
+                <div class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5">
+                    <button class="px-4 py-2 rounded cta-button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" class="bg-[#ED8000]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5436 9.58333L17.7756 8.19984C17.9271 7.29523 18.003 6.84293 17.7602 6.54647C17.5174 6.25 17.0711 6.25 16.1786 6.25H3.82135C2.92882 6.25 2.48256 6.25 2.23975 6.54647C1.99695 6.84293 2.07277 7.29523 2.22442 8.19984L3.22739 14.1828C3.55982 16.1659 3.72604 17.1574 4.40469 17.7454C5.08334 18.3333 6.06161 18.3333 8.01816 18.3333H9.99998" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M11.6667 15H18.3334M15 18.3333V11.6667" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M14.5834 6.25002C14.5834 3.71871 12.5314 1.66669 10 1.66669C7.46871 1.66669 5.41669 3.71871 5.41669 6.25002" stroke="white" stroke-width="1.5"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        
+    </li>
+    
+    <li class="flex border-b border-dashed pb-4">
+        
+        <!-- Left: image -->
+        <div class="flex w-1/4 justify-center items-center">
+            <img src="Kairon%20Instrumentos_files/images_002.jpg" alt="Guitarra Electrica Chapman Ghost Fret Lh Midnight Para Zurdo" class="h-24 w-24 rounded-lg ">
+        </div>
+        
+        <!-- Right: content (3/4) -->
+        <div class="flex flex-col w-3/4 pl-4">
+            
+            <!-- Top Row: title and price -->
+            <div class="flex justify-between items-start gap-2">
+                <h3 class="font-subtitle-lg w-2/3 sm:w-4/5">Guitarra Electrica Chapman Ghost Fret Lh Midnight Para Zurdo</h3>
+                <div class="flex justify-end items-end w-1/3 sm:w-1/5">
+                    <p class="font-subtitle-lg">$ 450.800</p>
+                </div>
+            </div>
+            
+            <!-- Middle Row: description -->
+            <div class="flex justify-between items-start gap-2">
+                <p class="font-text-md w-2/3 sm:w-4/5 overflow-y-auto h-full max-h-16">CHAPMAN
+ GHOST FRET LH ZURDA Midnight Sky HEAD.Straight Guardian Headstock 
+TUNERS Chapman Classic Closed (18:1 Gearing) STRING NUT 43mm Graph Tech 
+Black TUSQ ...</p>
+            
+                <!-- Bottom Row: shopping cart button -->
+                <div class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5">
+                    <button class="px-4 py-2 rounded cta-button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" class="bg-[#ED8000]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5436 9.58333L17.7756 8.19984C17.9271 7.29523 18.003 6.84293 17.7602 6.54647C17.5174 6.25 17.0711 6.25 16.1786 6.25H3.82135C2.92882 6.25 2.48256 6.25 2.23975 6.54647C1.99695 6.84293 2.07277 7.29523 2.22442 8.19984L3.22739 14.1828C3.55982 16.1659 3.72604 17.1574 4.40469 17.7454C5.08334 18.3333 6.06161 18.3333 8.01816 18.3333H9.99998" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M11.6667 15H18.3334M15 18.3333V11.6667" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M14.5834 6.25002C14.5834 3.71871 12.5314 1.66669 10 1.66669C7.46871 1.66669 5.41669 3.71871 5.41669 6.25002" stroke="white" stroke-width="1.5"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        
+    </li>
+    
+    <li class="flex border-b border-dashed pb-4">
+        
+        <!-- Left: image -->
+        <div class="flex w-1/4 justify-center items-center">
+            <img src="Kairon%20Instrumentos_files/images.jpg" alt="Guitarra Cort G250 Lh Bk Para Zurdo G Series" class="h-24 w-24 rounded-lg ">
+        </div>
+        
+        <!-- Right: content (3/4) -->
+        <div class="flex flex-col w-3/4 pl-4">
+            
+            <!-- Top Row: title and price -->
+            <div class="flex justify-between items-start gap-2">
+                <h3 class="font-subtitle-lg w-2/3 sm:w-4/5">Guitarra Cort G250 Lh Bk Para Zurdo G Series</h3>
+                <div class="flex justify-end items-end w-1/3 sm:w-1/5">
+                    <p class="font-subtitle-lg">$ 550.800</p>
+                </div>
+            </div>
+            
+            <!-- Middle Row: description -->
+            <div class="flex justify-between items-start gap-2">
+                <p class="font-text-md w-2/3 sm:w-4/5 overflow-y-auto h-full max-h-16">G
+ SERIES. CORT GUITARRA ELECTRICA DE 6 CUERDAS PARA ZURDOS G 250LH BK. 
+Guitarra de diseño clásico con doble cutaway. Cuerpo de tilo. Mástil 
+Bolt-on de arce c...</p>
+            
+                <!-- Bottom Row: shopping cart button -->
+                <div class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5">
+                    <button class="px-4 py-2 rounded cta-button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" class="bg-[#ED8000]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5436 9.58333L17.7756 8.19984C17.9271 7.29523 18.003 6.84293 17.7602 6.54647C17.5174 6.25 17.0711 6.25 16.1786 6.25H3.82135C2.92882 6.25 2.48256 6.25 2.23975 6.54647C1.99695 6.84293 2.07277 7.29523 2.22442 8.19984L3.22739 14.1828C3.55982 16.1659 3.72604 17.1574 4.40469 17.7454C5.08334 18.3333 6.06161 18.3333 8.01816 18.3333H9.99998" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M11.6667 15H18.3334M15 18.3333V11.6667" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M14.5834 6.25002C14.5834 3.71871 12.5314 1.66669 10 1.66669C7.46871 1.66669 5.41669 3.71871 5.41669 6.25002" stroke="white" stroke-width="1.5"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        
+    </li>
+    
+    <li class="flex border-b border-dashed pb-4">
+        
+        <!-- Left: image -->
+        <div class="flex w-1/4 justify-center items-center">
+            <img src="Kairon%20Instrumentos_files/3d41d656-6b58-4ad5-b2ab-99d514d85c26.jpg" alt="Guitarra Eléctrica Soloking Les Paul SLS60 QM Deluxe Black Aqua" class="h-24 w-24 rounded-lg ">
+        </div>
+        
+        <!-- Right: content (3/4) -->
+        <div class="flex flex-col w-3/4 pl-4">
+            
+            <!-- Top Row: title and price -->
+            <div class="flex justify-between items-start gap-2">
+                <h3 class="font-subtitle-lg w-2/3 sm:w-4/5">Guitarra Eléctrica Soloking Les Paul SLS60 QM Deluxe Black Aqua</h3>
+                <div class="flex justify-end items-end w-1/3 sm:w-1/5">
+                    <p class="font-subtitle-lg">$ 580.500</p>
+                </div>
+            </div>
+            
+            <!-- Middle Row: description -->
+            <div class="flex justify-between items-start gap-2">
+                <p class="font-text-md w-2/3 sm:w-4/5 overflow-y-auto h-full max-h-16">One
+ Piece African Mahogany Neck - Neck Dimension : 21mm (1st Fret) and 22.5
+ mm (12th Fret) - Fretboard Width : 43mm (1st Fret) and 56mm (12th fret)
+ - Ros...</p>
+            
+                <!-- Bottom Row: shopping cart button -->
+                <div class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5">
+                    <button class="px-4 py-2 rounded cta-button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" class="bg-[#ED8000]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5436 9.58333L17.7756 8.19984C17.9271 7.29523 18.003 6.84293 17.7602 6.54647C17.5174 6.25 17.0711 6.25 16.1786 6.25H3.82135C2.92882 6.25 2.48256 6.25 2.23975 6.54647C1.99695 6.84293 2.07277 7.29523 2.22442 8.19984L3.22739 14.1828C3.55982 16.1659 3.72604 17.1574 4.40469 17.7454C5.08334 18.3333 6.06161 18.3333 8.01816 18.3333H9.99998" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M11.6667 15H18.3334M15 18.3333V11.6667" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M14.5834 6.25002C14.5834 3.71871 12.5314 1.66669 10 1.66669C7.46871 1.66669 5.41669 3.71871 5.41669 6.25002" stroke="white" stroke-width="1.5"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        
+    </li>
+    
+    <li class="flex border-b border-dashed pb-4">
+        
+        <!-- Left: image -->
+        <div class="flex w-1/4 justify-center items-center">
+            <img src="Kairon%20Instrumentos_files/04b93831-020b-4cc6-b1b8-6b85336a3c66.jpg" alt="Guitarra Eléctrica Soloking Stratocaster MS1 Custom 22 HSS Pelham Blue" class="h-24 w-24 rounded-lg ">
+        </div>
+        
+        <!-- Right: content (3/4) -->
+        <div class="flex flex-col w-3/4 pl-4">
+            
+            <!-- Top Row: title and price -->
+            <div class="flex justify-between items-start gap-2">
+                <h3 class="font-subtitle-lg w-2/3 sm:w-4/5">Guitarra Eléctrica Soloking Stratocaster MS1 Custom 22 HSS Pelham Blue</h3>
+                <div class="flex justify-end items-end w-1/3 sm:w-1/5">
+                    <p class="font-subtitle-lg">$ 600.000</p>
+                </div>
+            </div>
+            
+            <!-- Middle Row: description -->
+            <div class="flex justify-between items-start gap-2">
+                <p class="font-text-md w-2/3 sm:w-4/5 overflow-y-auto h-full max-h-16">Alder
+ body with flat top and extended back cutaway and side natural binding -
+ Modern D Quartersawn Neck Shape with Canadian Roasted Maple - Roasted 
+Map...</p>
+            
+                <!-- Bottom Row: shopping cart button -->
+                <div class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5">
+                    <button class="px-4 py-2 rounded cta-button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" class="bg-[#ED8000]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5436 9.58333L17.7756 8.19984C17.9271 7.29523 18.003 6.84293 17.7602 6.54647C17.5174 6.25 17.0711 6.25 16.1786 6.25H3.82135C2.92882 6.25 2.48256 6.25 2.23975 6.54647C1.99695 6.84293 2.07277 7.29523 2.22442 8.19984L3.22739 14.1828C3.55982 16.1659 3.72604 17.1574 4.40469 17.7454C5.08334 18.3333 6.06161 18.3333 8.01816 18.3333H9.99998" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M11.6667 15H18.3334M15 18.3333V11.6667" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M14.5834 6.25002C14.5834 3.71871 12.5314 1.66669 10 1.66669C7.46871 1.66669 5.41669 3.71871 5.41669 6.25002" stroke="white" stroke-width="1.5"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        
+    </li>
+    
+    <li class="flex border-b border-dashed pb-4">
+        
+        <!-- Left: image -->
+        <div class="flex w-1/4 justify-center items-center">
+            <img src="Kairon%20Instrumentos_files/images_004.jpg" alt="Guitarra Electrica Jet Guitars JS450 TBL Stratocaster HSS" class="h-24 w-24 rounded-lg ">
+        </div>
+        
+        <!-- Right: content (3/4) -->
+        <div class="flex flex-col w-3/4 pl-4">
+            
+            <!-- Top Row: title and price -->
+            <div class="flex justify-between items-start gap-2">
+                <h3 class="font-subtitle-lg w-2/3 sm:w-4/5">Guitarra Electrica Jet Guitars JS450 TBL Stratocaster HSS</h3>
+                <div class="flex justify-end items-end w-1/3 sm:w-1/5">
+                    <p class="font-subtitle-lg">$ 610.000</p>
+                </div>
+            </div>
+            
+            <!-- Middle Row: description -->
+            <div class="flex justify-between items-start gap-2">
+                <p class="font-text-md w-2/3 sm:w-4/5 overflow-y-auto h-full max-h-16">¡Bienvenido
+ a JET Guitars! JET Guitars es una nueva marca de guitarras eléctricas 
+creada para el disfrute de músicos de todos los niveles y habilidades. 
+In...</p>
+            
+                <!-- Bottom Row: shopping cart button -->
+                <div class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5">
+                    <button class="px-4 py-2 rounded cta-button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" class="bg-[#ED8000]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5436 9.58333L17.7756 8.19984C17.9271 7.29523 18.003 6.84293 17.7602 6.54647C17.5174 6.25 17.0711 6.25 16.1786 6.25H3.82135C2.92882 6.25 2.48256 6.25 2.23975 6.54647C1.99695 6.84293 2.07277 7.29523 2.22442 8.19984L3.22739 14.1828C3.55982 16.1659 3.72604 17.1574 4.40469 17.7454C5.08334 18.3333 6.06161 18.3333 8.01816 18.3333H9.99998" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M11.6667 15H18.3334M15 18.3333V11.6667" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M14.5834 6.25002C14.5834 3.71871 12.5314 1.66669 10 1.66669C7.46871 1.66669 5.41669 3.71871 5.41669 6.25002" stroke="white" stroke-width="1.5"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        
+    </li>
+    
+</ul>
+</div>
+        </section>
+    </main>
+
+
+</body></html>
