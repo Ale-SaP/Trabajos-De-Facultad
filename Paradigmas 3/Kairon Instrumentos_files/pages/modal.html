@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <script src="../3.4.5"></script>
+    <link href="../css/styles.css" rel="stylesheet" />
+    <title>Product Modal</title>
+  </head>
+  <body>
+    <!-- Modal Backdrop -->
+    <div id="modal-overlay" class="modal-overlay"></div>
+
+    <!-- Modal Container -->
+    <div id="modal" class="modal">
+      <div class="modal-container max-w-screen-md h-screen md:h-auto">
+        <!-- Title and close button-->
+        <div class="flex justify-between items-center bg-black px-4 py-4 rounded-lg space-x-2">
+          <h2 class="font-title-xl text-white">
+            Guitarra Electrica Slick Guitars Sl60m Bwn Melody Maker
+          </h2>
+
+          <a href="../../Kairon Instrumentos.htm">
+            <button class="btn btn-lg bg-none rounded-full">
+              <svg
+                class="w-auto h-12"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.9993 14.0002L7.99994 8.00021M8.00058 14.0002L13.9999 8.00021"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21C16.5228 21 21 16.5228 21 11Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </button>
+          </a>
+        </div>
+
+        <!-- Modal Content -->
+        <div class="p-4">
+          <div
+            class="flex flex-row border-b-2 border-dashed border-gray-500 mb-4 pb-4 space-x-2"
+          >
+            <p class="font-text-md text-white h-[46px] px-4 bg-black flex justify-center items-center rounded-full">Guitarras</p>
+            <p class="font-text-md text-white h-[46px] px-4 bg-[#B11F1F] flex justify-center items-center rounded-full">Guitarras Eléctricas</p>
+            <p class="font-text-md text-white h-[46px] px-4 bg-[#7BAA65] flex justify-center items-center rounded-full">Slick Guitars</p>
+          </div>
+          <article
+            class="rounded-lg border border-solid border-2 border-black mb-4"
+          >
+            <p class="p-4 font-text-md">
+              Color: Brown Woodgrain Forma del cuerpo: SG - Style Número de
+              cuerdas: 6 cuerdas Construcción mástil: Atornillado Número de
+              trastes: 22 Longitud escala: 24,7...
+            </p>
+          </article>
+          <div
+            class="flex justify-center md:justify-start items-center border-b-2 border-dashed border-gray-500 mb-6 pb-6"
+          >
+            <img
+              src="../images/guitarras/images_003.jpg"
+              alt="Slick Guitars Sl60m Bwn Melody Maker"
+              class="w-full max-w-[400px] rounded-lg"
+            />
+          </div>
+          <div class="flex flex-row">
+            <div class="w-1/2"><!-- Extras --></div>
+            <div class="w-1/2 flex flex-col justify-end items-start space-y-4">
+              <p class="font-title-xl">$243.300</p>
+              <div class="flex flex-row space-x-2">
+                <!-- Buttons row-->
+                <button class="rounded-cta-black-medium px-2">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 3.33331V16.6666"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3.33337 10H16.6667"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <input
+                  type="number"
+                  id="unit_numbers"
+                  name="unit_numbers"
+                  min="0"
+                  max="100"
+                  value="0"
+                  placeholder="0"
+                  class="p-2 w-20 border-2 border-solid border-black rounded-lg"
+                />
+                <button class="rounded-cta-black-medium px-2">
+                  <svg
+                    width="16"
+                    height="2"
+                    viewBox="0 0 16 2"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.33337 1H14.6667"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <button class="rounded-orange-cta-button p-2">
+                <p class="font-subtitle-lg">Agregar al carrito</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
