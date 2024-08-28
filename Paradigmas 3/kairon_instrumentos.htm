@@ -2,13 +2,13 @@
 <html lang="es">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kairon Instrumentos</title>
     <!-- Tailwind CSS -->
-    <script src="Kairon%20Instrumentos_files/3.4.5"></script>
-    <link href="Kairon%20Instrumentos_files/css/styles.css" rel="stylesheet" />
+    <script src="./kairon_instrumentos_files/3.4.5"></script>
+    <link href="./kairon_instrumentos_files/css/styles.css" rel="stylesheet" />
   </head>
+
   <body class="bg-gray-100 max-w-screen-md md:my-0 md:mx-auto">
     <header>
       <nav>
@@ -17,20 +17,21 @@
         >
           <li>
             <img
-              src="Kairon%20Instrumentos_files/images/logo_pagina.webp"
-              alt="Store logo"
+              src="kairon_instrumentos_files/images/logo_pagina.webp"
+              alt="Logo de tienda"
               class="w-32 h-auto"
             />
           </li>
           <li>
             <!-- Shopping bag -->
             <a
-              href="./Kairon Instrumentos_files/pages/shopping_cart.html"
+              href="./kairon_instrumentos_files/pages/shopping_cart.html"
               class="block p-4 rounded hover:bg-blue-200"
             >
               <img
-                src="./Kairon Instrumentos_files/icons/main_page/shopping_bag.svg"
+                src="./kairon_instrumentos_files/icons/main_page/shopping_bag.svg"
                 class="w-8 sm:w-16 h-auto"
+                alt="Ver carrito de compras"
               />
             </a>
           </li>
@@ -96,7 +97,7 @@
     </header>
 
     <main class="mx-auto mt-4">
-      <section id="categories">
+      <div id="categories">
         <div id="categories-content">
           <ul
             class="flex px-4 overflow-x-auto pb-2 border-b border-solid border-black"
@@ -107,8 +108,9 @@
                   class="m-3 flex h-20 w-20 items-center justify-center rounded-full border-dashed border-2 border-gray-500"
                 >
                   <img
-                    src="./Kairon Instrumentos_files/icons/main_page/default_category.svg"
+                    src="./kairon_instrumentos_files/icons/main_page/default_category.svg"
                     class="size-12"
+                    alt="Categoria: Guitarras"
                   />
                 </div>
                 <p class="font-md-text">Guitarras</p>
@@ -121,8 +123,9 @@
                   class="m-3 flex h-20 w-20 items-center justify-center rounded-full border-dashed border-2 border-gray-500"
                 >
                   <img
-                    src="./Kairon Instrumentos_files/icons/main_page/default_category.svg"
+                    src="./kairon_instrumentos_files/icons/main_page/default_category.svg"
                     class="size-12"
+                    alt="Categoria: Bajos"
                   />
                 </div>
                 <p class="font-md-text">Bajos</p>
@@ -135,8 +138,9 @@
                   class="m-3 flex h-20 w-20 items-center justify-center rounded-full border-dashed border-2 border-gray-500"
                 >
                   <img
-                    src="./Kairon Instrumentos_files/icons/main_page/default_category.svg"
+                    src="./kairon_instrumentos_files/icons/main_page/default_category.svg"
                     class="size-12"
+                    alt="Categoria: Bajos"
                   />
                 </div>
                 <p class="font-md-text">Baterias</p>
@@ -144,16 +148,16 @@
             </li>
           </ul>
         </div>
-      </section>
+      </div>
 
-      <section id="content" class="mt-4">
+      <div id="content" class="mt-4">
         <div id="content-section">
           <ul class="mt-0 px-2 space-y-4">
             <li class="flex border-b border-dashed pb-4">
               <!-- Left: image -->
               <div class="flex w-1/4 justify-center items-center">
                 <img
-                  src="Kairon%20Instrumentos_files/images/guitarras/images.jpg"
+                  src="kairon_instrumentos_files/images/guitarras/images.jpg"
                   alt="Guitarra Electrica Slick Guitars Sl60m Wh Melody Maker"
                   class="h-24 w-24 rounded-lg"
                 />
@@ -185,13 +189,14 @@
                   <div
                     class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5"
                   >
-                    <a href="./Kairon Instrumentos_files/pages/modal.html">
+                    <form action="./kairon_instrumentos_files/pages/modal.html">
                       <button class="rounded-orange-cta-button">
                         <img
-                          src="./Kairon Instrumentos_files/icons/main_page/add_to_cart.svg"
+                          src="./kairon_instrumentos_files/icons/main_page/add_to_cart.svg"
+                          alt="Añadir al carrito"
                         />
                       </button>
-                    </a>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -201,7 +206,7 @@
               <!-- Left: image -->
               <div class="flex w-1/4 justify-center items-center">
                 <img
-                  src="Kairon%20Instrumentos_files/images/guitarras/images_002.jpg"
+                  src="kairon_instrumentos_files/images/guitarras/images_002.jpg"
                   alt="Guitarra Electrica Slick Guitars Sl57 TV Yellow Stratocaster"
                   class="h-24 w-24 rounded-lg"
                 />
@@ -233,13 +238,14 @@
                   <div
                     class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5"
                   >
-                    <a href="./Kairon Instrumentos_files/pages/modal.html">
+                    <form action="./kairon_instrumentos_files/pages/modal.html">
                       <button class="rounded-orange-cta-button">
                         <img
-                          src="./Kairon Instrumentos_files/icons/main_page/add_to_cart.svg"
+                          src="./kairon_instrumentos_files/icons/main_page/add_to_cart.svg"
+                          alt="Añadir al carrito"
                         />
                       </button>
-                    </a>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -249,7 +255,7 @@
               <!-- Left: image -->
               <div class="flex w-1/4 justify-center items-center">
                 <img
-                  src="Kairon%20Instrumentos_files/images/guitarras/images_003.jpg"
+                  src="kairon_instrumentos_files/images/guitarras/images_003.jpg"
                   alt="Guitarra Electrica Slick Guitars Sl60m Bwn Melody Maker"
                   class="h-24 w-24 rounded-lg"
                 />
@@ -281,13 +287,14 @@
                   <div
                     class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5"
                   >
-                    <a href="./Kairon Instrumentos_files/pages/modal.html">
+                    <form action="./kairon_instrumentos_files/pages/modal.html">
                       <button class="rounded-orange-cta-button">
                         <img
-                          src="./Kairon Instrumentos_files/icons/main_page/add_to_cart.svg"
+                          src="./kairon_instrumentos_files/icons/main_page/add_to_cart.svg"
+                          alt="Añadir al carrito"
                         />
                       </button>
-                    </a>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -297,7 +304,7 @@
               <!-- Left: image -->
               <div class="flex w-1/4 justify-center items-center">
                 <img
-                  src="Kairon%20Instrumentos_files/images/guitarras/images_002.jpg"
+                  src="kairon_instrumentos_files/images/guitarras/images_002.jpg"
                   alt="Guitarra Electrica Chapman Ghost Fret Lh Midnight Para Zurdo"
                   class="h-24 w-24 rounded-lg"
                 />
@@ -329,13 +336,14 @@
                   <div
                     class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5"
                   >
-                    <a href="./Kairon Instrumentos_files/pages/modal.html">
+                    <form action="./kairon_instrumentos_files/pages/modal.html">
                       <button class="rounded-orange-cta-button">
                         <img
-                          src="./Kairon Instrumentos_files/icons/main_page/add_to_cart.svg"
+                          src="./kairon_instrumentos_files/icons/main_page/add_to_cart.svg"
+                          alt="Añadir al carrito"
                         />
                       </button>
-                    </a>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -345,7 +353,7 @@
               <!-- Left: image -->
               <div class="flex w-1/4 justify-center items-center">
                 <img
-                  src="Kairon%20Instrumentos_files/images/guitarras/images.jpg"
+                  src="kairon_instrumentos_files/images/guitarras/images.jpg"
                   alt="Guitarra Cort G250 Lh Bk Para Zurdo G Series"
                   class="h-24 w-24 rounded-lg"
                 />
@@ -377,13 +385,14 @@
                   <div
                     class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5"
                   >
-                    <a href="./Kairon Instrumentos_files/pages/modal.html">
+                    <form action="./kairon_instrumentos_files/pages/modal.html">
                       <button class="rounded-orange-cta-button">
                         <img
-                          src="./Kairon Instrumentos_files/icons/main_page/add_to_cart.svg"
+                          src="./kairon_instrumentos_files/icons/main_page/add_to_cart.svg"
+                          alt="Añadir al carrito"
                         />
                       </button>
-                    </a>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -393,7 +402,7 @@
               <!-- Left: image -->
               <div class="flex w-1/4 justify-center items-center">
                 <img
-                  src="Kairon%20Instrumentos_files/images/guitarras/images_005.jpg"
+                  src="kairon_instrumentos_files/images/guitarras/images_005.jpg"
                   alt="Guitarra Eléctrica Soloking Les Paul SLS60 QM Deluxe Black Aqua"
                   class="h-24 w-24 rounded-lg"
                 />
@@ -426,13 +435,14 @@
                   <div
                     class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5"
                   >
-                    <a href="./Kairon Instrumentos_files/pages/modal.html">
+                    <form action="./kairon_instrumentos_files/pages/modal.html">
                       <button class="rounded-orange-cta-button">
                         <img
-                          src="./Kairon Instrumentos_files/icons/main_page/add_to_cart.svg"
+                          src="./kairon_instrumentos_files/icons/main_page/add_to_cart.svg"
+                          alt="Añadir al carrito"
                         />
                       </button>
-                    </a>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -442,7 +452,7 @@
               <!-- Left: image -->
               <div class="flex w-1/4 justify-center items-center">
                 <img
-                  src="Kairon%20Instrumentos_files/images/guitarras/images.jpg"
+                  src="kairon_instrumentos_files/images/guitarras/images.jpg"
                   alt="Guitarra Eléctrica Soloking Stratocaster MS1 Custom 22 HSS Pelham Blue"
                   class="h-24 w-24 rounded-lg"
                 />
@@ -475,13 +485,14 @@
                   <div
                     class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5"
                   >
-                    <a href="./Kairon Instrumentos_files/pages/modal.html">
+                    <form action="./kairon_instrumentos_files/pages/modal.html">
                       <button class="rounded-orange-cta-button">
                         <img
-                          src="./Kairon Instrumentos_files/icons/main_page/add_to_cart.svg"
+                          src="./kairon_instrumentos_files/icons/main_page/add_to_cart.svg"
+                          alt="Añadir al carrito"
                         />
                       </button>
-                    </a>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -491,7 +502,7 @@
               <!-- Left: image -->
               <div class="flex w-1/4 justify-center items-center">
                 <img
-                  src="Kairon%20Instrumentos_files/images/guitarras/images_004.jpg"
+                  src="kairon_instrumentos_files/images/guitarras/images_004.jpg"
                   alt="Guitarra Electrica Jet Guitars JS450 TBL Stratocaster HSS"
                   class="h-24 w-24 rounded-lg"
                 />
@@ -523,20 +534,21 @@
                   <div
                     class="flex justify-end items-end mt-auto w-1/3 sm:w-1/5"
                   >
-                    <a href="./Kairon Instrumentos_files/pages/modal.html">
+                    <form action="./kairon_instrumentos_files/pages/modal.html">
                       <button class="rounded-orange-cta-button">
                         <img
-                          src="./Kairon Instrumentos_files/icons/main_page/add_to_cart.svg"
+                          src="./kairon_instrumentos_files/icons/main_page/add_to_cart.svg"
+                          alt="Añadir al carrito"
                         />
                       </button>
-                    </a>
+                    </form>
                   </div>
                 </div>
               </div>
             </li>
           </ul>
         </div>
-      </section>
+      </div>
     </main>
   </body>
 </html>

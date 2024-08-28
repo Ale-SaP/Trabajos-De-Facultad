@@ -2,7 +2,6 @@
 <html lang="es">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kairon Instrumentos</title>
     <!-- Tailwind CSS -->
@@ -20,11 +19,11 @@
         <div class="modal-title space-x-2">
           <h2 class="font-title-xl text-white">Shopping Cart</h2>
 
-          <a href="../../Kairon Instrumentos.htm">
+          <form action="../../kairon_instrumentos.htm">
             <button class="btn btn-lg bg-none rounded-full">
-              <img src="../icons/modal/close_modal.svg" class="w-auto h-12" />
+              <img src="../icons/modal/close_modal.svg" class="w-auto h-12" alt="Cerrar el PopUp" />
             </button>
-          </a>
+          </form>
         </div>
 
         <!-- Shopping Cart Modal Content -->
@@ -49,7 +48,7 @@
                   <td class="border-b border-gray-300 p-2">
                     <input
                       type="number"
-                      id="unit_numbers"
+                      id="1-unit_numbers"
                       name="unit_numbers"
                       min="1"
                       max="100"
@@ -59,7 +58,7 @@
                     />
                   </td>
                   <td class="border-b border-gray-300 p-2"><p class="font-text-md">$235.500</p></td>
-                  <td class="border-b border-gray-300 p-2"><p class="font-text-md">$235.500</td></td>
+                  <td class="border-b border-gray-300 p-2"><p class="font-text-md">$235.500</p></td>
                 </tr>
                 <tr>
                   <td class="border-b border-gray-300 p-2 break-words">
@@ -69,7 +68,7 @@
                   <td class="border-b border-gray-300 p-2">
                     <input
                       type="number"
-                      id="unit_numbers"
+                      id="2-unit_numbers"
                       name="unit_numbers"
                       min="1"
                       max="100"
@@ -92,7 +91,7 @@
           </div>
           <div class="flex justify-end mt-4">
             <button class="rounded-orange-cta-button p-2">
-              <p class="font-subtitle-lg"><p class="font-text-md">Ir a pagar</p></p>
+              <span class="font-subtitle-lg">Ir a pagar</span>
             </button>
           </div>
         </div>

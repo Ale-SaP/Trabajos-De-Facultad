@@ -2,9 +2,7 @@
 <html lang="es">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
     <script src="../3.4.5"></script>
     <link href="../css/styles.css" rel="stylesheet" />
     <title>Product Modal</title>
@@ -24,11 +22,15 @@
             Guitarra Electrica Slick Guitars Sl60m Bwn Melody Maker
           </h2>
 
-          <a href="../../Kairon Instrumentos.htm">
+          <form action="../../kairon_instrumentos.htm">
             <button class="btn btn-lg bg-none rounded-full">
-              <img src="../icons/modal/close_modal.svg" class="w-auto h-12"/>
+              <img
+                src="../icons/modal/close_modal.svg"
+                alt="Cerrar el PopUp"
+                class="w-auto h-12"
+              />
             </button>
-          </a>
+          </form>
         </div>
 
         <!-- Modal Content -->
@@ -52,7 +54,7 @@
               Slick Guitars
             </p>
           </div>
-          <article
+          <div
             class="rounded-lg border border-solid border-2 border-black mb-4"
           >
             <p class="p-4 font-text-md">
@@ -60,7 +62,7 @@
               cuerdas: 6 cuerdas Construcción mástil: Atornillado Número de
               trastes: 22 Longitud escala: 24,7...
             </p>
-          </article>
+          </div>
           <div
             class="flex justify-center md:justify-start items-center border-b-2 border-dashed border-gray-500 mb-6 pb-6"
           >
@@ -128,8 +130,8 @@
                   </svg>
                 </button>
               </div>
-              <button class="rounded-orange-cta-button p-2">
-                <p class="font-subtitle-lg">Agregar al carrito</p>
+              <button class="rounded-orange-cta-button btn-lg p-2">
+                <span class="font-subtitle-lg">Ir a pagar</span>
               </button>
             </div>
           </div>
